@@ -6,14 +6,14 @@
 FROM debian:bullseye-slim AS build_hercules
 
 # Set this to "classic" or "renewal" to build the relevant server version (default: classic).
-ARG HERCULES_SERVER_MODE=classic
+ARG HERCULES_SERVER_MODE=renewal
 
 # Set this to a YYYYMMDD date string to build a server for a specific packet version.
 # Set HERCULES_PACKET_VERSION to "latest" to build the server for the packet version
 # defined in the Hercules code base as the current supported version.
 # As a recommended alternative, the "Noob Pack" client download available on the
 # Hercules forums is using the packet version 20180418.
-ARG HERCULES_PACKET_VERSION=latest
+ARG HERCULES_PACKET_VERSION=20200401
 
 # The version of Hercules to build.
 ARG HERCULES_RELEASE="latest"
