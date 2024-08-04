@@ -36,7 +36,7 @@ jobs:
     strategy:
       matrix:
         HERCULES_SERVER_MODE: ["classic", "renewal"]
-        HERCULES_PACKET_VERSION: ["20180418", "latest"]
+        HERCULES_PACKET_VERSION: ["20180418", "20200401", "latest"]
 
     steps:
       - uses: actions/checkout@v3
